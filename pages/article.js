@@ -1,10 +1,17 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Head from 'next/head';
 
+const imageWidth = 600;
+const imageHeight = 600;
 export default function Home() {
   return (
     <div className={styles.container}>
-
+      <Head>
+        <title>Core Web Vitals</title>
+        <meta name="description" content="Test for core web vitals" />
+      </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>
           Core Web Vitals
@@ -23,11 +30,11 @@ export default function Home() {
           the following metrics (and their respective thresholds):
         </p>
 
-        <img src="https://web-dev.imgix.net/image/tcFciHGuF3MxnTr1y5ue01OGLBn2/ZZU8Z7TMKXmzZT2mCjJU.svg"></img>
+        <img src="https://web-dev.imgix.net/image/tcFciHGuF3MxnTr1y5ue01OGLBn2/ZZU8Z7TMKXmzZT2mCjJU.svg" alt="largest content pain" width={imageWidth} height={imageHeight} />
 
-        <img src="https://web-dev.imgix.net/image/tcFciHGuF3MxnTr1y5ue01OGLBn2/iHYrrXKe4QRcb2uu8eV8.svg"></img>
+        <img src="https://web-dev.imgix.net/image/tcFciHGuF3MxnTr1y5ue01OGLBn2/iHYrrXKe4QRcb2uu8eV8.svg" alt="first input dealy" width={imageWidth} height={imageHeight} />
 
-        <img src="https://web-dev.imgix.net/image/tcFciHGuF3MxnTr1y5ue01OGLBn2/dgpDFckbHwwOKdIGDa3N.svg"></img>
+        <img src="https://web-dev.imgix.net/image/tcFciHGuF3MxnTr1y5ue01OGLBn2/dgpDFckbHwwOKdIGDa3N.svg" alt="comulative layout shifts" width={imageWidth} height={imageHeight} />
 
         <ul>
           <li>
